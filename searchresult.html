@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Serial Number</th>
+                <th>Book Name</th>
+                <th>Author Name</th>
+                <th>Available</th>
+                <th>Select to Issue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row -->
+            <tr>
+                <td>1</td>
+                <td>Example Book</td>
+                <td>John Doe</td>
+                <td>Yes</td>
+                <td><button class="button login"><a href="bookissue.html">Issue</button></td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+    <div class="button-container">
+        <button type="button" class="button cancel">Cancel</button>
+            <button type="submit" class="button login"><a href="userlogin.html"a>Login</button>
+    </div>
+</body>
+</html>

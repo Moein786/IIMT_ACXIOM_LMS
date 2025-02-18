@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Availability Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+        form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #495057;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type="submit"], .back-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 48%;
+        }
+        input[type="submit"]:hover, .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit-book" method="post">
+        <h1>Check Book Availability</h1>
+        <label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" name="bookName" required>
+        
+        <label for="authorName">Author Name:</label>
+        <input type="text" id="authorName" name="authorName" required>
+        
+        <div class="button-container">
+            <button type="button" class="back-button" onclick="history.back()">Back</button>
+            <button type="button" class="back-button"> <a href="searchresult.html">Search</a></button>
+        </div>
+    </form>
+</body>
+</html>

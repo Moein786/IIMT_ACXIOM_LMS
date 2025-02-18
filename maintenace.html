@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Maintenance</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Membership</td>
+                <td>
+                    <button onclick="addMembership(addMembership)" ><a href="addmembership.html"a>Add</button>
+                    <button onclick="uploadMembership(uploadMembership)"><a href="updatemember.html"a>Upload</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Book/Movie</td>
+                <td>
+                    <button onclick="addBookMovie(addBookMovie)"><a href="addbook.html"a>Add</button>
+                    <button onclick="uploadBookMovie(uploadBookMovie)"><a href="updatebook.html"a>Upload</button>
+                </td>
+            </tr>
+            <tr>
+                <td>User Management</td>
+                <td>
+                    <button onclick="addUser(addUser)"><a href="usermanagement.html"a>Add</button>
+                    <button onclick="uploadUser(uploadUser)"><a href="usermanagement.html"a>Upload</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function addMembership() {
+            alert('Add Membership button clicked');
+        }
+
+        function uploadMembership() {
+            alert('Upload Membership button clicked');
+        }
+
+        function addBookMovie() {
+            alert('Add Book/Movie button clicked');
+        }
+
+        function uploadBookMovie() {
+            alert('Upload Book/Movie button clicked');
+        }
+
+        function addUser() {
+            alert('Add User button clicked');
+        }
+
+        function uploadUser() {
+            alert('Upload User button clicked');
+        }
+    </script>
+</body>
+</html>
